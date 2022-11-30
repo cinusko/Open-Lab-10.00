@@ -8,14 +8,18 @@ namespace Open_Lab_10._00
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Book LOTR = new Book();
             {
-                LOTR.title = "xxxxx";
-            } 
-            
-            Console.WriteLine(LOTR.title);
+                LOTR.Title("Lord of the rings");
+                LOTR.Pages(450);
+                LOTR.Category("Fantasy");
+                LOTR.Author("J. R. R. Tolkien");
+                LOTR.ReleaseDate("July.29.1954");
+                LOTR.PrintValues();
+
+            }
         }
     }
 }
