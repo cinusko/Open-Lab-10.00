@@ -12,12 +12,12 @@ namespace Open_Lab_10._00
         {
             Book LOTR = new Book();
             {
-                LOTR.Title("Lord of the rings");
-                LOTR.Pages(450);
-                LOTR.Category("Fantasy");
-                LOTR.Author("J. R. R. Tolkien");
-                LOTR.ReleaseDate("July.29.1954");
-                LOTR.PrintValues();
+                LOTR.Title = "Lord of the rings";
+                LOTR.Pages = 450;
+                LOTR.Category = "Fantasy";
+                LOTR.Author = "J. R. R Tolkien";
+                LOTR.ReleaseDate = 1954;
+                Console.WriteLine(LOTR.ToString());
 
             }
         }

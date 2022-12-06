@@ -13,42 +13,64 @@ namespace Open_Lab_10._00
         private int pages;
         private string category;
         private string author;
-        private string releaseDate;
+        private int releaseDate;
 
 
 
-            public string Title(string titleSet)
+            public string Title
             {
-                this.title = titleSet;
-                return title;
+                get { return title; }
+                set { title = value; }
+                
             }
-            public int Pages(int pagesSet)
+            public int Pages
             {
-                this.pages = pagesSet;
-                return pages;
+                get { return pages; }
+                set
+                {
+                    if (value < 0)
+                    { 
+                        pages = 1;
+                    }
+                    else
+                    {
+                        pages = value;
+                    }
+                }
             }
-            public string Category(string categorySet)
+            public string Category
             {
-                this.category = categorySet;
-                return category; 
+                get { return category; }
+                set { category = value; }
             }
-            public string Author(string authorSet)
+            public string Author
             {
-                this.author = authorSet;
-                return author;
+                get { return author; }
+                set { author = value; }
             }
-            public string ReleaseDate(string releaseDateSet)
+            public int ReleaseDate
             {
-                this.releaseDate = releaseDateSet;
-                return releaseDate; 
+                get { return releaseDate; }
+                set 
+                {
+                    if (value < 1450)
+                    {
+                        releaseDate = -1;
+                    }
+                    else if (value > 2021)
+                    {
+                        releaseDate = -1;
+                    }
+                    else
+                    { 
+                        releaseDate = value;
+                    }
+
+                }
             }
-        public void PrintValues()
+        public override string ToString()
         {
-            Console.WriteLine(title);
-            Console.WriteLine(pages);
-            Console.WriteLine(category);
-            Console.WriteLine(author);
-            Console.WriteLine(releaseDate);
+            return String.Format($"{title}\n{pages}\n{category}\n{author}\n{releaseDate}");
         }
     }
 }
