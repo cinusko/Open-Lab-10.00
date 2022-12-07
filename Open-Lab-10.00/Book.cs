@@ -31,6 +31,9 @@ namespace Open_Lab_10._00
         {
             this.title = title;
             this.pages = pages;
+            category = "-1";
+            author = "-1";
+            releaseDate = -1;
         }
 
         public Book(string title, int pages, string category, string author, int releaseDate)
