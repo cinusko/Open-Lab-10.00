@@ -18,8 +18,26 @@ namespace Open_Lab_10._00
                 LOTR.Author = "J. R. R. Tolkien";
                 LOTR.ReleaseDate = 1954;
                 Console.WriteLine(LOTR.ToString());
+                Console.WriteLine();
 
             }
+
+            Book LOTR2 = new Book();
+            Console.WriteLine(LOTR2.ToString());
+            Console.WriteLine();
+
+
+            Book LOTR3 = new Book("Lord of the rings 3", 416);
+            Console.WriteLine(LOTR3.ToString());
+            Console.WriteLine();
+
+            Book HOBIT = new Book("Hobit", 310, "fantasy", "J. R. R. Tolkie", 1937);
+            Console.WriteLine(HOBIT.ToString());
+
+            
+
+
+
         }
     }
 }
