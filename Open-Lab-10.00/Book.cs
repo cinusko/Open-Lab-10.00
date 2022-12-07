@@ -17,6 +17,18 @@ namespace Open_Lab_10._00
         private string author;
         private int releaseDate;
 
+
+
+        /// <summary>
+        /// Public list with Categories that can be assigned to objects.
+        /// </summary>
+        public static List<String> categoryList = new List<String>()
+        {
+            "detske", "romantické", "náučné", "sci-fi", "dobrodružné"
+        };
+
+
+        
         
         public Book()
         {
@@ -68,7 +80,6 @@ namespace Open_Lab_10._00
         }
         public string Category
         {
-            get { return category; }
             set { category = value; }
         }
         public string Author
