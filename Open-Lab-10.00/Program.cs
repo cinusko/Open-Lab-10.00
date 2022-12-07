@@ -31,7 +31,7 @@ namespace Open_Lab_10._00
             Console.WriteLine(LOTR3.ToString());
             Console.WriteLine();
 
-            Book HOBIT = new Book("Hobit", 310, "fantasy", "J. R. R. Tolkie", 1937);
+            Book HOBIT = new Book("Hobit", 310, "fantasy", "J. R. R. Tolkien", 1937);
             Console.WriteLine(HOBIT.ToString());
 
             
