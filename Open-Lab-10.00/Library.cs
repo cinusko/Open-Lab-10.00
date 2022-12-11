@@ -42,8 +42,20 @@ namespace Open_Lab_10._00
 
         public override string ToString()
         {
+            string books = "";
+            string students = "";
 
-            return string.Format($"{this.NumberOfBooks}\n{this.numberOfStudents}\n{bookList.ToString()}\n{studentsList.ToString()}");
+            foreach(var i in BookList)
+            {
+                books = books + i.ToString();
+            }
+
+            foreach (var y in StudentsList)
+            {
+                students = students + y.ToString();
+            }
+
+            return string.Format($"\n{this.NumberOfBooks}\n{this.numberOfStudents}\n{books}\n{students}\n");
         }
     }
 }
